@@ -33,82 +33,104 @@
   <!-- This Is Header Sections  -->
   <header>
     <!-- This is Nav Bar -->
-    <nav class="ax-w-screemn-xl mx-auto mt-12">
 
-      <div class="navbar mx-auto bg-[#F85559] rounded-[600px] p-4 justify-between">
-        <!-- Menu Text and Logo  -->
-        <ul class="gap-8 text-white text-lg ml-4 ">
-          <li class=" hover:text-yellow-300 cursor-pointer">Home</li>
-          <li class="hover:text-yellow-300 cursor-pointer">About Us</li>
-          <li class="hover:text-yellow-300 cursor-pointer">Shop</li>
-          <li class="hover:text-yellow-300 cursor-pointer">All Fruits</li>
-        </ul>
-        <div class="gap-4">
-          <img class="w-10 h-10 rounded-full" src="./images/logo.png" />
-          <h3 class=" md:text-4xl lg:text-4xl text-white font-bold">Fruit Burst</h3>
+    <nav class="max-w-screen-xl mx-auto">
+
+      <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] mt-10 rounded-full ">
+        <div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0 s" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+              <li class="text-white md:text-lg lg:text-lg font-medium">Home</li>
+              <li class="text-white md:text-lg lg:text-lg font-medium">About Us</li>
+              <li class="text-white md:text-lg lg:text-lg font-medium">Shop</li>
+              <li class="text-white md:text-lg lg:text-lg font-medium">All Fruits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 ">
+            <li><a class="text-white md:text-lg lg:text-lg font-medium">Home</a></li>
+            <li tabindex="0">
+            </li>
+            <li><a class="text-white md:text-lg lg:text-lg font-medium">About Us</a></li>
+            <li><a class="text-white md:text-lg lg:text-lg font-medium">Shope</a></li>
+            <li><a class="text-white md:text-lg lg:text-lg font-medium">All Fruits</a></li>
+          </ul>
+        </div> 
+        <!-- This is nav Logo  -->
+
+        <div class=" md:mx-auto lg:mx-auto gap-3">
+          <img class="w-10 " src="./images/logo.png" alt="">
+          <a class="normal-case text-black  text-4xl md:text-white lg:text-white font-bold">Fruit Burst</a>
         </div>
 
-        <!-- Nave Bar Search Box  -->
-        <div class="mr-4">
-
-          <input type="text" placeholder="Search" class="relative input rounded-[50px] h-10 w-24 md:w-auto" />
-          <i class=" absolute right-24 fa-solid fa-magnifying-glass"></i>
-
+        <div class=" pr-6 hidden md:block lg:block relative">
+          <input type="text" placeholder="Type here"  class="input input-bordered h-9 rounded-full" />
+          <i class=" hidden md:block lg:block absolute fa-solid fa-magnifying-glass left-44 top-3 "></i>
         </div>
       </div>
     </nav>
+
     <!-- This Is Banner Part -->
     <div class="relative max-w-screen-xl mx-auto">
       <section class=" max-w-screen-xl mx-auto text-center justify-center relative">
 
         <div class="carousel mx-auto mt-8 ">
+          <!-- Banner Image 1 -->
 
-          <div id="slide1" class="carousel-item relative w-full ">
-            <img src="./images/banner1.png" class="w-full " />
+          <div id="slide1" class="carousel-item relative w-[100%] lg:w-full md:w-full">
+            <img src="./images/banner1.png" class=" lg:w-full md:w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle">❮</a>
-
-              <div class="absolute -top-40 left-96">
-                <h3 class="text-5xl font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
-                <p class="text-white mt-10 text-xl font-medium ">We supply highly quality organic products</p>
+              <div class="absolute left-9 -top-14 lg:-top-40 md:-top-40 lg:left-96 md:left-96">
+                <h3 class=" text-3xl lg:text-5xl md:text-5xl md:font-bold lg:font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
+                <p class="text-white lg:mt-10 md:mt-10 md:text-xl lg:text-xl md:font-medium  lg:font-medium ">We supply highly quality organic products</p>
                 <button class=" font-bold rounded-lg text-lg px-4 py-2 mt-4 bg-[#F85559]  text-white">Shop Now</button>
               </div>
               <a href="#slide2" class="btn btn-circle">❯</a>
-
             </div>
           </div>
 
-          <div id="slide2" class="carousel-item relative w-full ">
-            <img src="./images/banner2.png" class="w-full" />
+          <!-- Banner Image 2 -->
+
+          <div id="slide2" class="carousel-item relative w-[100%] lg:w-full md:w-full ">
+            <img src="./images/banner2.png" class=" lg:w-full md:w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a>
-              <div class="absolute -top-40 left-96">
-                <h3 class="text-5xl font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
-                <p class="text-white mt-10 text-xl font-medium ">We supply highly quality organic products</p>
+              <div class="absolute left-9 -top-14 lg:-top-40 md:-top-40 lg:left-96 md:left-96">
+                <h3 class=" text-3xl lg:text-5xl md:text-5xl md:font-bold lg:font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
+                <p class="text-white lg:mt-10 md:mt-10 md:text-xl lg:text-xl md:font-medium  lg:font-medium ">We supply highly quality organic products</p>
                 <button class=" font-bold rounded-lg text-lg px-4 py-2 mt-4 bg-[#F85559]  text-white">Shop Now</button>
               </div>
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="./images/banner3.png" class="w-full" />
+
+          <!-- Banner Image 3 -->
+          <div id="slide3" class="carousel-item relative w-[100%] lg:w-full md:w-full">
+            <img src="./images/banner3.png" class="lg:w-full md:w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" class="btn btn-circle">❮</a>
-              <div class="absolute -top-40 left-96">
-                <h3 class="text-5xl font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
-                <p class="text-white mt-10 text-xl font-medium ">We supply highly quality organic products</p>
-                <button class=" font-bold rounded-lg text-lg px-4 py-2 mt-4 bg-[#F85559]  text-white">Shop Now</button>
+              <div class="absolute left-9 -top-14 lg:-top-40 md:-top-40 lg:left-96 md:left-96">
+                <h3 class=" text-3xl lg:text-5xl md:text-5xl md:font-bold lg:font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
+                <p class="text-white lg:mt-10 md:mt-10 md:text-xl lg:text-xl md:font-medium  lg:font-medium">We supply highly quality organic products</p>
+                <button class="font-bold rounded-lg text-lg px-4 py-2 mt-4 bg-[#F85559]  text-white">Shop Now</button>
               </div>
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="./images/banner4.png" class="w-full" />
+          <!-- Banner Image 4 -->
+
+          <div id="slide4" class="carousel-item relative w-[100%] lg:w-full md:w-full">
+            <img src="./images/banner4.png" class="lg:w-full md:w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle">❮</a>
-              <div class="absolute -top-40 left-96">
-                <h3 class="text-5xl font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
-                <p class="text-white mt-10 text-xl font-medium ">We supply highly quality organic products</p>
+              <div class="absolute left-9 -top-14 lg:-top-40 md:-top-40 lg:left-96 md:left-96">
+                <h3 class=" text-3xl lg:text-5xl md:text-5xl md:font-bold lg:font-bold  text-white">Exotic tastes at your <br> doorstep</h3>
+                <p class="text-white lg:mt-10 md:mt-10 md:text-xl lg:text-xl md:font-medium  lg:font-medium ">We supply highly quality organic products</p>
                 <button class=" font-bold rounded-lg text-lg px-4 py-2 mt-4 bg-[#F85559]  text-white">Shop Now</button>
               </div>
               <a href="#slide1" class="btn btn-circle">❯</a>
@@ -116,7 +138,7 @@
           </div>
         </div>
       </section>
-      <!-- This Is Banner Frouts Part  -->
+      <!-- This Is Banner Fruits Part  -->
       <section
         class=" hidden md:block lg:block md:max-w-screen-xl lg:max-w-screen-xl md:mx-auto lg:mx-auto md:justify-center lg:justify-center md:rounded-lg lg:rounded-lg md:shadow-xl lg:shadow-xl ">
         <div
@@ -154,7 +176,7 @@
   <!-- This Is Main Sections  -->
   <main>
     <!-- This is Deal of the day Sections  -->
-    <section class=" max-w-screen-xl mx-auto mt-52">
+    <section class=" w-[90%] mx-auto md:max-w-screen-xl lg:max-w-screen-xl md:mx-auto lg:mx-auto mt-52">
 
       <div class="flex flex-col md:flex-row lg:flex-row lg:items-center md:items-center gap-10 justify-evenly">
         <div>
@@ -197,7 +219,7 @@
         </div>
       </div>
       <!-- This is Deal of the day Fruits Details  -->
-      <div class="mt-36 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="mt-36 grid  md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div>
           <div class="card shadow-xl">
             <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
@@ -512,7 +534,7 @@
 
     <!-- This is Why Choose Us Sections  -->
 
-    <section class="max-w-screen-xl mx-auto">
+    <section class=" w-[80%] md:max-w-screen-xl lg:max-w-screen-xl md:mx-auto lg:mx-auto">
       <!-- Title Bar -->
       <div class=" text-center">
         <h3 class="font-extrabold text-3xl lg:text-5xl md:text-5xl">Why Choose Us</h3>
@@ -521,13 +543,14 @@
       </div>
 
       <!-- This is Why Chuse Us Cards And Photo Sections  -->
+      
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
         <!-- Left Side Text  -->
         <div class="mt-20">
 
           <!-- Dedicated Team Card  -->
 
-          <div class="flex gap-4">
+          <div class="flex flex-col md:flex-row lg:flex-row gap-4">
             <div>
               <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/group 1.png" alt="">
             </div>
@@ -541,7 +564,7 @@
 
           <!-- Fresh is Best Card -->
 
-          <div class="flex gap-4 mt-7">
+          <div class="flex flex-col md:flex-row lg:flex-row gap-4 mt-7">
             <div>
               <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/love 1.png" alt="">
             </div>
@@ -555,7 +578,7 @@
 
           <!-- Gift Certificates Card  -->
 
-          <div class="flex gap-4 mt-7">
+          <div class="flex flex-col md:flex-row lg:flex-row gap-4 mt-7">
             <div>
               <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/gift-box 1.png" alt="">
             </div>
@@ -581,7 +604,7 @@
         <bdo dir="rtl">
           <div class="mt-20 ">
             <!-- This Is Integrated Supplier box  -->
-            <div class="flex gap-4">
+            <div class="flex flex-col md:flex-row lg:flex-row gap-4">
               <div>
                 <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/fruit 1.png" alt="">
               </div>
@@ -595,7 +618,7 @@
 
             <!-- Fresh is Best Card -->
 
-            <div class="flex gap-4 mt-7">
+            <div class="flex flex-col md:flex-row lg:flex-row gap-4 mt-7">
               <div>
                 <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/ice-cream 1.png" alt="">
               </div>
@@ -609,7 +632,7 @@
 
             <!-- Gift Certificates Card  -->
 
-            <div class="flex gap-4 mt-7">
+            <div class="flex flex-col md:flex-row lg:flex-row gap-4 mt-7">
               <div>
                 <img class="mt-5 border-8 rounded-full bg-gray-300 w-11" src="./images/like 1.png" alt="">
               </div>
@@ -626,13 +649,13 @@
     </section>
   </main>
   <!-- This is footer Section  -->
-  <footer class="mt-28 bg-black">
+  <footer class="max-w-screen-xl mx-auto mt-28  bg-black ">
     <div>
       <div class="flex items-center justify-center gap-3 pt-20">
         <img class="w-12 h-12" src="./images/logo.png" alt="">
         <h3 class="text-white text-3xl font-bold">Fruit Burst</h3>
       </div>
-      <div class="list-none flex justify-center items-center mt-8 gap-10 text-white">
+      <div class="list-none flex flex-wrap md:justify-center lg:justify-center md:items-center gap-3 lg:items-center mt-8 md:gap-10 lg:gap-10 text-white">
         <li class="text-lg font-semibold">Home</li>
         <li class="text-lg font-semibold">About Us</li>
         <li class="text-lg font-semibold">Shop</li>
@@ -643,7 +666,7 @@
 
       <!-- This Is Footer Social-Logo Icon -->
       <div class="pb-20">
-        <div class="list-none flex justify-center items-center mt-8 gap-10 text-white  ">
+        <div class="list-none flex justify-center items-center mt-8 gap-3 md:gap-10 lg:gap-10 text-white  ">
          <i class="fa-brands fa-twitter text-4xl"></i>
           <i class="fa-brands fa-facebook text-4xl bg-[#1877F2] rounded-full"></i>
           <i class="fa-brands fa-youtube text-4xl text-[#FF0000] rounded-full"></i>
@@ -652,10 +675,7 @@
           <i class="fa-brands fa-apple text-4xl"></i>
         </div>
       </div>
-
-
     </div>
   </footer>
 </body>
-
 </html>
